@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <div class="container">
+        <div class="screen">
+            <p id="display">0</p>
+        </div>
+        <div class="content">
+            <div class="cal-row">
+                <button onclick="handlingopr('ac')" class="button ac">AC</button>
+                <button onclick="handlingopr('del')" class="button del">DEL</button>
+                <button onclick="handler('divide')" class="button operator">&divide;</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="handler('7')" class="button">7</button>
+                <button onclick="handler('8')" class="button">8</button>
+                <button onclick="handler('9')" class="button">9</button>
+                <button onclick="handler('times')" class="button operator">&times;</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="handler('4')" class="button">4</button>
+                <button onclick="handler('5')" class="button">5</button>
+                <button onclick="handler('6')" class="button">6</button>
+                <button onclick="handler('minus')" class="button operator">&minus;</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="handler('1')" class="button">1</button>
+                <button onclick="handler('2')" class="button">2</button>
+                <button onclick="handler('3')" class="button">3</button>
+                <button onclick="handler('plus')" class="button operator">&plus;</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="handler('0')" class="button zero">0</button>
+                <button onclick="handler('period')" class="button period">&period;</button>
+                <button onclick="handlingopr('equals')" class="button operator">&equals;</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
